@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./Images/favicon.jpg" />
+    <title>The Monkey Minimalist</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Fonts -->
+   <!-- Google Fonts: Premium Typography -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+  rel="stylesheet"
+/>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- History CSS -->
+    <link rel="stylesheet" href="history.css" />
+  </head>
+
+  <!-- BARBA WRAPPER -->
+  <body data-barba="wrapper">
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="article-top">
+
+      <!-- Site Title -->
+      <h1 class="site-title">
+        <a href="index.html">The Monkey Minimalist</a>
+      </h1>
+
+      <!-- Mobile Toggle -->
+      <button class="article-nav-toggle" aria-label="Menu">
+        ☰
+      </button>
+
+      <nav class="article-nav">
+        <a href="about.html" >About</a>
+        <a href="articles.html">Articles</a>
+        <a href="history.html" class="active">History</a>
+        <a href="society.html">Society</a>
+        <a href="philosophy.html">Philosophy</a>
+        <a href="archive.html">Archive</a>
+        <a href="books.html">Books</a>
+      </nav>
+
+      <div class="article-mobile-nav">
+        <a href="about.html" >About</a>
+        <a href="articles.html">Articles</a>
+        <a href="history.html" class="active">History</a>
+        <a href="society.html">Society</a>
+        <a href="philosophy.html">Philosophy</a>
+        <a href="archive.html">Archive</a>
+         <a href="books.html">Books</a>
+      </div>
+
+    </header>
+
+
+    <!-- =========================
+         BARBA CONTAINER
+    ========================== -->
+
+    <main
+      class="history-archive"
+      data-barba="container"
+      data-barba-namespace="history"
+    >
+
+      <!-- Intro -->
+
+      <section class="history-intro">
+
+        <span class="history-label">Historical Archive</span>
+
+        <h2>Ideas, Events, and Turning Points</h2>
+
+        <p>
+          A chronological record of movements, conflicts, and transformations
+          that shaped societies.
+        </p>
+
+      </section>
+
+
+      <!-- Timeline -->
+
+      <section class="history-timeline">
+
+        <article class="history-entry">
+
+          <span class="history-dot"></span>
+
+          <div class="history-content">
+
+            <span class="history-year">1915</span>
+
+            <h3>Why the Buddhist–Muslim Riots Occurred</h3>
+
+            <p>
+              Examining colonial policies, economic tensions, and communal
+              narratives.
+            </p>
+
+            <a href="#">Read Analysis →</a>
+
+          </div>
+
+        </article>
+
+
+        <article class="history-entry">
+
+          <span class="history-dot"></span>
+
+          <div class="history-content">
+
+            <span class="history-year">1857</span>
+
+            <h3>Before the Revolt</h3>
+
+            <p>
+              How decades of silence transformed into organized resistance.
+            </p>
+
+            <a href="#">Read Analysis →</a>
+
+          </div>
+
+        </article>
+
+
+        <article class="history-entry">
+
+          <span class="history-dot"></span>
+
+          <div class="history-content">
+
+            <span class="history-year">1947</span>
+
+            <h3>Road to Independence</h3>
+
+            <p>
+              Political negotiations, mass movements, and colonial withdrawal.
+            </p>
+
+            <a href="#">Read Analysis →</a>
+
+          </div>
+
+        </article>
+
+
+        <article class="history-entry">
+
+          <span class="history-dot"></span>
+
+          <div class="history-content">
+
+            <span class="history-year">1897</span>
+
+            <h3>Netaji’s Silent Partner</h3>
+
+            <p>
+              The overlooked personal dimension of revolutionary life.
+            </p>
+
+            <a href="#">Read Analysis →</a>
+
+          </div>
+
+        </article>
+
+      </section>
+
+
+      <!-- Footer Link -->
+
+      <div class="history-footer-link">
+        <a href="index.html">← Return to Home</a>
+      </div>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+      <div class="footer-inner">
+
+        <div class="footer-brand">
+          The Monkey Minimalist
+        </div>
+
+        <div class="footer-tagline">
+          History · Philosophy · Society
+        </div>
+
+        <div class="footer-copy">
+          © 2026 The Monkey Minimalist
+        </div>
+
+      </div>
+
+    </footer>
+
+
+    <!-- =========================
+         SCRIPTS
+    ========================== -->
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <!-- ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Anime -->
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+
+    <!-- Lenis -->
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+    <!-- Barba -->
+    <script src="https://unpkg.com/@barba/core"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+  </body>
+</html>

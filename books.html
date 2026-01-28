@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./Images/favicon.jpg" />
+    <title>The Monkey Minimalist</title>
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+   <!-- Google Fonts: Premium Typography -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+  rel="stylesheet"
+/>
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body data-barba="wrapper">
+    <!-- ================= HEADER ================= -->
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="article-top">
+      <!-- Site Title -->
+      <h1 class="site-title">
+        <a href="index.html">The Monkey Minimalist</a>
+      </h1>
+
+      <!-- Mobile Toggle -->
+      <button class="article-nav-toggle" aria-label="Menu">☰</button>
+
+      <!-- Desktop Nav -->
+      <nav class="article-nav">
+        <a href="about.html" >About</a>
+        <a href="articles.html">Articles</a>
+        <a href="history.html">History</a>
+        <a href="society.html">Society</a>
+        <a href="philosophy.html">Philosophy</a>
+        <a href="archive.html">Archive</a>
+        <a href="books.html"class="active">Books</a>
+      </nav>
+
+      <div class="article-mobile-nav">
+        <a href="about.html">About</a>
+        <a href="articles.html">Articles</a>
+        <a href="history.html">History</a>
+        <a href="society.html">Society</a>
+        <a href="philosophy.html">Philosophy</a>
+        <a href="archive.html">Archive</a>
+         <a href="books.html" class="active">Books</a>
+      </div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+
+    <main
+  class="books-page"
+  data-barba="container"
+  data-barba-namespace="books"
+>
+
+  <section class="books-page-wrapper">
+
+
+    <!-- STORY ITEM -->
+    <article class="books-page-item">
+
+      <div class="books-page-text">
+
+        <h2 class="books-page-title">
+          Aaradhika
+        </h2>
+
+        <p class="books-page-author">
+          An Unpublished Story by Nithish Chandra
+        </p>
+
+        <p class="books-page-badge">
+          Original Manuscript
+        </p>
+
+        <p class="books-page-description">
+          Aradhika is a reflective literary work exploring identity,
+          devotion, resilience, and silent strength in a rapidly
+          changing world. The story follows a woman who learns to
+          navigate loss, responsibility, and self-realization through
+          discipline, restraint, and inner clarity.
+        </p>
+
+        <blockquote class="books-page-quote">
+          “Some journeys are not meant to be seen.  
+          They are meant to be understood.”
+        </blockquote>
+
+        <div class="books-page-links">
+          <a href="#">Read Preview</a>
+          <a href="#">Manuscript</a>
+          <a href="#">Coming Soon</a>
+        </div>
+
+      </div>
+
+
+      <div class="books-page-image">
+        <img src="./Images/aaradhika.png" alt="Aradhika Story Cover" />
+      </div>
+
+    </article>
+
+
+    <hr class="books-page-divider" />
+
+
+    <!-- STORY DETAILS
+    <article class="books-page-item">
+
+      <div class="books-page-text">
+
+        <h2 class="books-page-title">
+          About the Story
+        </h2>
+
+        <p class="books-page-author">
+          Literary Fiction · Philosophy · Human Experience
+        </p>
+
+        <p class="books-page-description">
+          Set against the backdrop of social change and personal
+          responsibility, Aradhika reflects the tension between duty
+          and desire, tradition and transformation, silence and
+          self-expression.
+        </p>
+
+        <p class="books-page-description">
+          The narrative draws from Sanatana values, human psychology,
+          and contemporary realities, presenting a timeless portrait
+          of growth through restraint and awareness.
+        </p>
+
+        <blockquote class="books-page-quote">
+          “Strength is not loud.  
+          It is consistent.”
+        </blockquote>
+
+        <div class="books-page-links">
+          <a href="#">Author Notes</a>
+          <a href="#">Background</a>
+          <a href="#">Updates</a>
+        </div>
+
+      </div>
+
+
+      <div class="books-page-image">
+        <img src="aradhika-note.jpg" alt="Author Notes" />
+      </div>
+
+    </article> -->
+
+
+  </section>
+
+</main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+     <!-- ==============================
+    FOOTER
+    ============================== -->
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">The Monkey Minimalist</div>
+
+        <div class="footer-tagline">History · Philosophy · Society</div>
+
+        <div class="footer-copy">© 2026 The Monkey Minimalist</div>
+
+        <nav class="footer-nav">
+          <a href="#">Instagram</a> · <a href="#">YouTube</a> ·
+          <a href="#">Twitter</a>
+        </nav>
+      </div>
+    </footer>
+    <!-- ================= SCRIPTS ================= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
