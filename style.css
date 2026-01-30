@@ -1,5 +1,5 @@
 /* ==============================
-   BASE — PREMIUM TYPOGRAPHY
+   BASE — PREMIUM TYPOGRAPHY SYSTEM
    ============================== */
 
 :root {
@@ -8,91 +8,134 @@
   --font-serif: "Playfair Display", serif;
 }
 
-body {
-  background: var(--bg-dark);
-  color: var(--text-light);
-  font-family: var(--font-body);
-  letter-spacing: 0.01em;
-  margin: 0;
-}
 
-/* Headings / Brand */
-/* Force Premium Typography Everywhere */
+/* ==============================
+   GLOBAL TEXT RESET
+   ============================== */
 
 body,
 p,
 li,
 span,
-a {
+a,
+button,
+input,
+textarea {
   font-family: var(--font-body);
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 1.75;
+  color: #111;
+  background: #fff;
 }
 
 
+/* ==============================
+   HEADINGS / BRAND
+   ============================== */
 
-h1, h2, h3,
+h1, h2, h3, h4, h5, h6,
 .site-title,
 .home-title,
 .article-main-title,
 .about-title,
-.news-title {
+.news-title,
+.page-title {
   font-family: var(--font-head);
   font-weight: 600;
   letter-spacing: -0.02em;
 }
 
-/* Quotes / Philosophy */
 
-blockquote,
-.home-philosophy blockquote,
-.philosophy-text {
-  font-family: var(--font-serif);
-  letter-spacing: 0.01em;
-  font-style: italic;
-}
+/* Hero Title */
 
-/* Smooth Scroll Fix */
-
-html.lenis {
-  height: auto;
-}
 .home-title {
-  font-family: var(--font-head) !important;
   font-weight: 600;
   letter-spacing: -0.025em;
 }
+
+
+/* Brand Logo */
+
 .site-title {
-  font-family: var(--font-head);
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  position: relative;
 }
+
 .site-title::after {
   content: "";
   display: block;
   width: 40px;
   height: 1px;
-  background: #000;
+  background: currentColor;
   margin: 10px auto 0;
   opacity: 0.2;
 }
+
+
+/* ==============================
+   SUBTITLE / META
+   ============================== */
 
 .home-subtitle {
   font-weight: 400;
   letter-spacing: 0.01em;
   max-width: 520px;
-}
-.home-title span:last-child {
-  font-weight: 500;
-  opacity: 0.9;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.home-btn {
+
+/* ==============================
+   QUOTES / PHILOSOPHY
+   ============================== */
+
+blockquote,
+.home-philosophy blockquote,
+.philosophy-text {
+  font-family: var(--font-serif);
+  font-style: italic;
+  letter-spacing: 0.01em;
+}
+
+
+/* ==============================
+   BUTTONS / ACTIONS
+   ============================== */
+
+.home-btn,
+button {
   font-family: var(--font-head);
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
+
+/* ==============================
+   HERO SECOND LINE (OPTIONAL)
+   ============================== */
+
+.home-title span:last-child {
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+
+/* ==============================
+   LENIS / SCROLL FIXES
+   ============================== */
+
+html.lenis {
+  height: auto;
+}
 
 .lenis.lenis-smooth {
   scroll-behavior: auto !important;
@@ -188,7 +231,7 @@ html.lenis {
 
 .home-intro p {
   font-family: "Libre Baskerville", serif;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   line-height: 1.8;
   margin-bottom: 22px;
   color: #222;
@@ -937,7 +980,10 @@ html.lenis {
 
 .article-body p {
   font-family: "Libre Baskerville", serif;
-  font-size: 1.05rem;
+    font-size: 19px;
+  line-height: 1.8;
+  max-width: 65ch;
+  margin: 0 auto 28px;
   margin-bottom: 28px;
   color: #222;
 }
@@ -969,6 +1015,8 @@ html.lenis {
   font-size: 0.75rem;
   letter-spacing: 1.4px;
   font-weight: 500;
+  text-decoration: none;
+  color: black;
 }
 
 /* ==============================
@@ -2493,4 +2541,127 @@ html.lenis {
 footer {
   background: #f9f9f9;
   border-top: 1px solid #eee;
+}
+/* ==============================
+   FONT SIZE BOOST — DESKTOP/LAPTOP
+   (No Layout Changes)
+============================== */
+
+/* Base Body */
+
+body {
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+/* Article Title */
+
+.article-main-title {
+  font-size: 2.8rem;
+}
+
+/* Article Text */
+
+.article-body p {
+  font-size: 20px;
+  line-height: 1.85;
+}
+
+/* Blockquotes */
+
+.article-body blockquote {
+  font-size: 1.1rem;
+}
+
+/* Meta Text */
+
+.article-meta {
+  font-size: 0.8rem;
+}
+
+/* Large Screens */
+
+@media (min-width: 1024px) {
+
+  body {
+    font-size: 19px;
+  }
+
+  .article-main-title {
+    font-size: 3.2rem;
+  }
+
+  .article-body p {
+    font-size: 21px;
+  }
+
+}
+
+
+/* ==============================
+   NAV UNDERLINE FIX — STABLE
+============================== */
+
+/* Reset all underlines */
+
+.article-nav a::after {
+  width: 0 !important;
+}
+
+/* Show underline ONLY on hover */
+
+.article-nav a:hover::after {
+  width: 100% !important;
+}
+
+/* Show underline ONLY on active page */
+
+.article-nav a.active::after {
+  width: 100% !important;
+}
+
+
+/* ==============================
+   MOBILE MENU — SMOOTH SLIDE
+============================== */
+
+.article-mobile-nav {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+
+  background: #fafafa;
+  border-top: 1px solid #e5e5e5;
+
+  padding: 20px 0;
+
+  /* Animation setup */
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
+}
+
+/* When Open */
+
+.article-mobile-nav.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+/* Hamburger Animation */
+
+.article-nav-toggle {
+  transition: transform 0.3s ease;
+}
+
+.article-nav-toggle.open {
+  transform: rotate(90deg);
 }
